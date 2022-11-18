@@ -1,0 +1,130 @@
+
+while loop
+===============
+
+count = 0
+while (count < 9):
+   print ('The count is:', count)
+   count = count + 1
+
+print ("Good bye!")
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+The Infinite Loop
+===============
+
+count = 1
+while (count == 1):
+   print ('The count is:', count)
+
+print ("Good bye!")
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Else Statement with While Loop
+===============
+
+count = 0
+while count < 5:
+   print (count, " is  less than 5")
+   count = count + 1
+else:
+   print (count, " is greater than 5")
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+for Loop
+===============
+
+for letter in 'Python':     # First Example
+   print ('Current Letter :', letter)
+
+print ("Good bye!")
+
+-----------------------------
+
+fruits = ['banana', 'apple',  'mango']
+for fruit_Item in fruits:        # Second Example
+   print ('Current fruit :', fruit_Item)
+
+print ("Good bye!")
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Else Statement with For Loop
+===============
+
+fruits = ['banana', 'apple',  'mango']
+for fruit_Item in fruits:        # Second Example
+   print ('Current fruit :', fruit_Item)
+else:
+    print("The list is finished")
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Nested loops
+===============
+
+i = 1
+while(i < 3):
+   
+   j=0
+   while(j <= 10):
+      print ("j : ",j)
+      j = j + 1
+   
+   print ("Iteration number : ", i)
+   i = i + 1
+
+print ("Good bye!")
+
+****************************
+
+fruits = ['banana', 'apple',  'mango']
+
+for fruit_Item in fruits:        # Get item from the list  
+   print ('Current fruit :', fruit_Item)
+
+   for letter in fruit_Item:     # Printing its letters
+        print ('Letter :', letter)
+
+print ("Good bye!")
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+break statement
+===============
+
+for letter in 'Python':     # First Example
+   if letter == 'h':
+      break
+   print ('Current Letter :', letter)
+
+**********************************************
+var = 10                    # Second Example
+while var > 0:              
+   print ('Current variable value :', var)
+   var = var -1
+   if var == 5:
+      break
+
+print ("Good bye!")
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+continue statement
+===============
+
+for letter in 'Python':     # First Example
+   if letter == 'h':
+      continue
+   print ('Current Letter :', letter)
+   
+************************************************
+
+var = 10                    # Second Example
+while var > 0:              
+
+   var = var -1
+   if var == 5:
+      continue
+	print ('Current variable value :', var)
+	
+print ("Good bye!")
+--------------------------------------------------------------------------------------------------------------------------------------------

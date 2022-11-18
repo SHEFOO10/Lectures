@@ -1,0 +1,453 @@
+Basic Syntax
+============
+
+print("Hello, Python!")
+print "Hello, Python!"  # Error synatx
+----------------------------------------------------------------------------------------------------
+
+Python Identifiers
+==================
+
+Var1=10
+var1=5
+Var_2=3
+
+print("Var1=",Var1)
+print("var1=",var1)
+print("var_2=",Var_2)
+----------------------------------------------------------------------------------------------------
+
+Lines and Indentation
+=====================
+
+if True:
+print("Answer")
+print("True")
+else:
+print("Answer")
+print("False")
+----------------------------------------------------------------------------------------------------
+
+Multi-Line Statements
+=====================
+
+item_one=1
+item_two=2
+item_three=3
+
+total =item_one + item_two + item_three+ item_two + item_three+ item_two + item_three+ item_two + item_three
+
+total = item_one + \
+        item_two + \
+        item_three
+print(total)
+
+*********************************
+
+days = ['Monday', 'Tuesday', 'Wednesday',
+        'Thursday', 'Friday']
+print(days)
+
+
+--------------------------------------------------------------------------------------
+
+Quotation in Python
+=====================
+
+word = 'word'
+sentence = "This is a sentence."
+paragraph = """This is a paragraph. It is
+made up of multiple lines and sentences."""
+
+print(word)
+print(sentence)
+print(paragraph)
+--------------------------------------------------------------------------------------
+
+Comments in Python
+=====================
+
+# First comment
+print("Hello, Python!") # second comment
+
+name = "Madisetti" # This is again comment
+print(name)
+
+'''
+This is a multiline
+comment.
+'''
+--------------------------------------------------------------------------------------
+
+Multiple Statements
+=====================
+
+x=5; y=6; z=10; print(x+y+z)
+--------------------------------------------------------------------------------------
+
+Assigning Values to Variables
+=====================
+
+counter = 100        # An integer assignment
+miles   = 1000.0       # A floating point
+name    = "John"     # A string
+
+print (counter)
+print (miles)
+print (name)
+--------------------------------------------------------------------------------------
+
+Multiple Assignment
+=====================
+
+a = b = c = 1
+
+print (a)
+print(b)
+print(c)
+
+
+a,b,c = 1,2,"john"
+
+print (a)
+print(b)
+print(c)
+--------------------------------------------------------------------------------------
+
+Python Strings
+=====================
+
+str = 'Hello World!'
+
+print (str)         		# Prints complete string
+print (str[0])       	 	# Prints first character of the string
+print (str[2:5])    	 	# Prints characters starting from 3rd to 5th
+print (str[2:])     	 	# Prints string starting from 3rd character
+print (str * 2)      	 	# Prints string two times
+print (str + "TEST")  	    # Prints concatenated string
+
+--------------------------------------------------------------------------------------
+
+Data Type Conversion
+=====================
+
+var1=10.5
+var2=6.3
+
+x=int(var1)
+y=int(var2)
+
+print ("x= ",x)
+print("y= ", y)
+**************************
+
+var1=10
+var2=6
+
+x=float(var1)
+y=float(var2)
+
+print ("x= ",x)
+print("y= ", y)
+--------------------------------------------------------------------------------------
+
+Python Assignment Operators
+=====================
+
+a=5
+c=10
+
+c=c+a
+
+# c+=a
+# c+=5
+
+# c-=a
+# c*=2
+
+print("C=",c)
+--------------------------------------------------------------------------------------
+
+Conditional Statements
+=====================
+
+If 
+====
+
+var1 = True
+if var1:
+   print("1 - Got a true expression value")
+   print (var1)
+
+var2 = False
+if var2:
+   print ("2 - Got a true expression value")
+   print (var2)
+
+print ("Good bye!")
+
+---------------------- Like Switch Case
+
+Student_Grade = 50
+
+if Student_Grade >= 60:
+   print("Sucess")
+
+if Student_Grade < 60:
+   print("Faild")
+
+********************************************************
+
+If else
+========
+
+var1 = 100
+if var1:
+   print ("1 - Got a true expression value")
+   print (var1)
+else:
+   print ("1 - Got a false expression value")
+   print (var1)
+
+
+#############################
+var2 = 0
+if var2:
+   print ("2 - Got a true expression value")
+   print (var2)
+else:
+   print ("2 - Got a false expression value")
+   print (var2)
+
+print ("Good bye!")
+********************************************************
+If elif else
+========
+
+x = 30
+y = 50
+if x > y:
+    print("x is greater than y")
+elif y > x:
+    print ("y is greater than x")
+else:
+    print("x and y are equal")
+	
+--------------------------------
+
+var = 100
+if var == 200:
+   print ("1 - Got a true expression value")
+   print (var)
+elif var == 150:
+   print ("2 - Got a true expression value")
+   print (var)
+elif var == 100:
+   print ("3 - Got a true expression value")
+   print (var)
+else:
+   print ("4 - Got a false expression value")
+   print (var)
+
+print ("Good bye!")
+--------------------------------------------------------------------------------------
+
+Nested IF statements
+=====================
+
+
+x = 30
+if x > 10:
+    print("x is greater than 10")
+    if x < 40:
+        print("x is less than 40")
+print("x value:", x)
+
+-----------------------
+
+x = 30
+y = 10
+if x >= y:
+    print("x is greater than or equals to y")
+    if x == y:
+        print("x is equals to y")
+    else:
+        print("x is greater than y")
+else:
+    print("x is less than y")
+	
+------------------------
+
+var = 100
+
+if var < 200:
+   print ("Expression value is less than 200")
+
+   if var == 150:
+      print ("Which is 150")
+   elif var == 100:
+      print ("Which is 100")
+   elif var == 50:
+      print ("Which is 50")
+   elif var < 50:
+      print ("Expression value is less than 50")
+
+else:
+   print ("Could not find true expression")
+
+
+print ("Good bye!")
+--------------------------------------------------------------------------------------
+
+
+
+
+
+=====================
+More If Examples
+=====================
+
+if a > b: print("a is greater than b")
+----------------
+a = 2
+b = 330
+print("A") if a > b else print("B")
+---------------
+a = 330
+b = 330
+print("A") if a > b else print("=") if a == b else print("B")
+----------------
+a = 200
+b = 33
+c = 500
+if a > b and c > a:
+  print("Both conditions are True")
+--------------------------
+a = 200
+b = 33
+c = 500
+if a > b or a > c:
+  print("At least one of the conditions is True")
+---------------------
+x = 41
+
+if x > 10:
+  print("Above ten,")
+  if x > 20:
+    print("and also above 20!")
+  else:
+    print("but not above 20.")
+--------------------
+
+The pass Statement
+==================
+if statements cannot be empty, but if you for some reason have an if statement with no content, put in the pass statement to avoid getting an error.
+
+a = 33
+b = 200
+
+if b > a:
+  pass
+--------------------------------------------------------------------------------------
+
+x = 10
+y = 20
+if x > y:
+    print("x is greater than y")
+if y > x:
+    print("y is greater than x")
+print("x value:", x)
+print("y value:", y)
+
+If you skip the indentation while creating if statements, 
+you will get build errors (IndentationError).
+
+x = 10
+y = 20
+if x > y:
+print("x is greater than y")
+if y > x:
+print("y is greater than x")
+print("x value:", x)
+print("y value:", y)
+
+
+--------------------------------------------------------------------------------------
+Python If And     	
+=====================
+
+x = 30
+y = 20
+if x > y and x == 30:
+    print(" x value is 30 and x is greater than y")
+	
+-----------------------	
+Python If Or
+=====================
+
+x = 30
+y = 20
+if x > y or x == 10:
+    print(" x equals to 10 or x is greater than y")		
+-----------------------
+Python If Not
+=====================
+	
+x = False
+y = 20
+if not x:
+    print("x is not True")
+if not y == 30:
+    print("y is not equals to 20")	
+--------------------------------------------------------------------------------------
+
+One Line If Statement
+=====================
+
+x = 30
+if x > 10: print("x is greater than 10")
+--------------------------------------------------------------------------------------
+
+x = 10
+y = 20
+if x > y or x == y:
+    print("x is greater than or equal y")
+else:
+    print("y is greater than x")
+
+--------------------------------------------------------------------------------------
+
+Python If Else One line
+=====================
+
+x = 10
+print("x = 10") if x == 30 else print("x value is not 30")
+
+--------------------------------------------------------------------------------------
+x = 10
+y = 10
+print("x") if x > y else print ("x = y") if x == y else print("y")
+--------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
